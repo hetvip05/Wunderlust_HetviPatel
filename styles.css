@@ -1,51 +1,138 @@
-/* CSS by Hetvi Patel */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 :root {
     --purple: #9b26b0;
     --yellow: #f6d64a;
@@ -74,7 +161,7 @@ header {
 
 /* Logo Styles */
 #logo {
-    flex: 1; /* Take 1/3 of the available space */
+    flex: none; /* Take 1/3 of the available space */
 }
 
 #logo img {
@@ -99,7 +186,7 @@ h1 {
 
 header p {
     font-family: 'Montserrat';
-    font-size: 8px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -113,23 +200,22 @@ nav {
 
 nav ul {
     list-style-type: none;
-    padding: 3; /* Remove default padding */
+    padding: 0; /* Remove default padding */
     display: flex;
     flex-direction: row; /* Arrange the navigation items horizontally */
 }
 
 nav li {
-    margin-right: 7px; /* Add margin between navigation items */
+    margin-right: 10px; /* Add margin between navigation items */
 }
 
 nav a {
     text-decoration: none;
     color: #000000;
     font-family: 'Montserrat';
-    font-size: 8px;
     text-transform: uppercase;
     font-weight: 100;
-    padding: 7px;
+    padding: 5px;
     background-color: #FFFFFF;
 }
 
@@ -211,13 +297,13 @@ nav .active a {
     text-transform: uppercase; /* Uppercase text */
     font-weight: bold;  
     margin-top: 10px;
-    text-align:top;
+    vertical-align: top;
     position: absolute;
     top: 3%;
     bottom:90%;
     left: 25%;
     right: 25%;
-    transform:perspective(-10%, -90%);
+    transform:perspective(500px) rotateX(-10deg) rotateY(-90deg);
     margin: 0;
     z-index: 1;
 }
@@ -228,7 +314,7 @@ nav .active a {
     background-color: var(--teal);
     border: 1px solid var(--white);
     border-radius: 5px;
-    }
+}
 
 
 #plan {
@@ -318,7 +404,7 @@ nav .active a {
     display: flex; /* Use flexbox for horizontal layout */
     margin-top: 25px;
     margin-bottom: 25px;
-    padding-top: none;
+    padding-top: 0;
     padding-right: 5%;
     padding-left: 5%;
    
@@ -350,7 +436,7 @@ nav .active a {
 }
 #about h4 {
     text-transform: uppercase; /* Uppercase text */
-    text-size-adjust:10px;
+    text-size-adjust:100%;
     margin: 0; /* Remove default margin for h4 */
     font-size: 12px; /* Set a specific font size for h4 */
     font-weight: bold; /* Make h4 text bold */
@@ -518,7 +604,8 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
+/* Base Mobile Styles */
+/* These styles are for the smallest screens (mobile-first approach) */
 
 /* Small Screen Styles */
 @media (min-width: 480px) {
@@ -893,19 +980,19 @@ footer a:hover {
     }
 
     #logo img {
-        max-width: 100%;
+        max-width: 70%;
     }
 
     #header-content {
-        margin: 0 40px;
+        margin: 0 30px;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 36px;
     }
 
     header p {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     /* Navigation Styles */
