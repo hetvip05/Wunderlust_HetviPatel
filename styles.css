@@ -373,7 +373,7 @@ nav .active a {
     font-size: 10px; /* Set a specific font size for paragraphs */
     color: #000000; /* Black */
     font-family: 'Montserrat', sans-serif; /* Specify font-family for paragraphs */
-    font-size: 9px;
+    font-size: 10px;
 }
 
 #about div {
@@ -392,9 +392,9 @@ nav .active a {
 }
 
 #about img {
-    width: 70%; /* Set a width of 100% for equal sizing */
-    height: 70%; /* Maintain aspect ratio */
-    max-width: 500px; /* Set a maximum width to avoid stretching */
+    width: 50%; /* Set a width of 100% for equal sizing */
+    height: 50%; /* Maintain aspect ratio */
+    max-width: 300px; /* Set a maximum width to avoid stretching */
     margin-bottom: 10px; /* Add spacing below images */
     text-align: center;
     margin-left: 25px;
@@ -482,6 +482,7 @@ form input[type="radio"] {
     border-radius: 50%;
     background-color: #FFFFFF; /* White background */
     position: relative;
+    margin-right: 5px;
 }
 
 .radio-control::before {
@@ -505,13 +506,13 @@ form input[type="radio"] {
 .form-row {
     flex-basis: 100%; /* Make each form row take full width */
     display: flex;
-    justify-content: space-between;
-}
+    }
 
 .form-row > label,
 .form-row > input,
 .form-row > select {
     flex-basis: calc(50% - 20px); /* Adjust the width and account for margins */
+    margin-bottom: 20px;
 }
 
 /* Style for required asterisk */
